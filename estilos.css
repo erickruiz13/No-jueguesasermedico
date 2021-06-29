@@ -1,0 +1,581 @@
+:root{
+  --color1: rgb(219,144,.5);
+  --color2: rgba(23, 180, 83, 0.877);
+  --color3: rgba(11,194,211, 0.623);
+  --fondo: #f2f2f2;
+  --titulos: 33px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido:45px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans';
+  background: var(--fondo);
+}
+
+img{
+    vertical-align: top;
+}
+
+
+/* Preloader */
+.hidden{
+  overflow: hidden;
+}
+
+.centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+/* Header */
+
+header{
+  width: 100%;
+  height:600px;
+  background: linear-gradient(to bottom,
+  rgba(2,0,225,0.71),
+  rgba(29,241,171, .6),
+  rgba(7,109,150, .45)
+  ), url("../img/intoc.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+.nav1{
+    background: transparent;
+    height: 80px;
+    color: #fff;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+}
+
+.nav2{
+    background: var(--fondo);
+    height: 100px;
+    color: #000;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+}
+
+.contenedor-nav{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width:1000px;
+  height:inherit;
+  overflow: hidden;
+}
+
+nav .enlaces a{
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+
+nav .enlaces a:hover{
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+.logo, .logo img{ height:80px;}
+
+.icono{
+  display:none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+}
+
+.textos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textos>h1{
+    font-size: 80px;
+    ;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+}
+
+.textos>h2{font-size: 30px; font-weight: 300;}
+
+.textos>h3{
+    color: #FFFFFF;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    text-align: justify;
+    margin-top: 17px;
+    margin-left: 0px;
+    padding-left: 229px;
+    padding-right: 245px;
+}
+/* Main */
+
+.contenedor{
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-left: 0pt;
+    margin-bottom: 0pt;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+}
+.contenedor1{
+    margin-top: 51px;
+    font-size: 26pt;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-style: normal;
+    font-weight: 400;
+}
+.after1{
+    margin-top: -4px;
+    margin-bottom: 32px;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 20pt;
+}
+
+.contenedor h3{
+    font-size: 36pt;
+    color: #000000;
+    margin-bottom: 0px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+
+.contenedor p{
+    font-size: 12pt;
+    color: #FFFFFF;
+    margin-bottom: var(--espacios);
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    margin-top: 24px;
+    text-align: center;
+    line-height: 2pt;
+}
+.workcontenedor{
+    font-size: 18pt;
+    color: #000000;
+    margin-bottom: 23px;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    margin-top: -13px;
+}}
+
+.after{
+    content: '';
+    margin: auto;
+    margin-top: var(--espacios);
+    width: 336px;
+    height: 67px;
+    margin-bottom: var(--espacios-contenido);
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
+}
+.contenedor2{
+    margin-top: 60px;
+    margin-bottom: 61px;
+    height: 282px;
+    color: #FFFFFF;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 20pt;
+    padding-top: 20px;
+}
+.after2{
+    margin-top: 20px;
+    margin-bottom: -211px;
+    height: 282px;
+    color: #FFFFFF;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 16pt;
+    padding-top: 20px;
+    padding-left: 259px;
+    padding-right: 281px;
+}
+.after5{
+    color: #000000;
+    margin-top: 9px;
+    margin-bottom: 19px;
+}
+.caja-servicios1{
+    text-align: center;
+    font-size: 15pt;
+    width: 241px;
+    margin-left: 134px;
+}
+
+.caja-servicios2{
+    text-align: center;
+    font-size: 15pt;
+    width: 241px;
+    margin-right: -21px;
+    margin-left: 0px;
+}
+.caja-servicios3{
+    text-align: center;
+    font-size: 15pt;
+    width: 248px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 145px;
+}
+.subtexto1{
+    margin-top: 8px;
+    font-size: 11pt;
+}
+
+
+.content-card{
+    width: 29%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 15px;
+    margin-top: 11px;
+    padding-top: 0px;
+}
+
+.people{
+  height: 80%;
+}
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.texto-team1{
+    margin-top: 20px;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 18pt;
+}
+.texto-team2{
+    margin-top: 20px;
+    font-size: 18pt;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+}
+.texto-team3{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 18pt;
+}
+
+.texto-team{
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios) 0;
+    color: #000000;
+    text-align: center;
+}
+
+.about{
+    background-image: url("../img/335.jpg");
+    height: auto;
+    opacity: 1;
+    background-size: 1315px auto;
+    background-position: 1% 42%;
+    overflow-x: visible;
+}
+
+.servicios{
+  display: flex;
+  color:#fff;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.caja-servicios{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.caja-servicios>h4{
+  margin-bottom: var(--espacios);
+}
+
+.caja-servicios>p{
+  text-align: center;
+}
+
+.botones-work{
+    overflow: hidden;
+}
+
+.botones-work li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: var(--espacios-contenido);
+    padding: 6px 12px;
+    list-style: none;
+}
+
+.botones-work li:hover{
+    color: #00C6D7;
+    cursor: pointer;
+}
+
+.botones-work .active{
+    color: #000000;
+}
+
+.galeria-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -24px;
+}
+
+.cont-work{
+  width: 31%;
+  box-shadow:;
+  height:300px;
+  overflow: hidden;
+  margin-bottom: var(--espacios-contenido);
+}
+.filter{
+    color: #000000;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    font-size: 16pt;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img-work{
+  height: 90%;
+  width: 100%;
+}
+
+.img-work img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textos-work{
+    height: 10%;
+}
+
+.textos-work h4{
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+    font-family: Arial, "Arial Black", "Arial Narrow", "Arial Rounded MT Bold";
+    margin-top: 2px;
+}
+
+/* Footer */
+
+footer{
+    background: url(../img/teclado.jpg);
+    padding-right: 0px;
+    padding-left: 169px;
+}
+
+.marca-logo{
+  width: 40%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+}
+.marca-logo img{
+  width: 100%;
+}
+.iconos{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.fab{
+  font-size:60px;
+  color: #FFF;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+footer p{
+  margin-top:var(--espacios);
+}
+
+@media screen and (max-width: 700px){
+  .nav2{
+    color: #fff;
+  }
+
+  .icono{
+    display:block;
+    cursor: pointer;
+  }
+
+  .enlaces{
+    position: fixed;
+    top:80px;
+    background: #2c3e50;
+    left: 0;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .enlaces a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #34495e;
+    color:#fff;
+  }
+
+  .textos>h1{
+    font-size: 70px;
+    text-align: center;
+}
+  .textos>h2{font-size:35px;}
+
+  .content-card{
+    width: 48%;
+    margin-bottom:var(--margenes);
+  }
+
+  :root{
+    --margenes: 30px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  :root{
+    --espacios-contenido: 25px;
+  }
+
+  .content-card{
+    width: 90%;
+  }
+
+  .caja-servicios{
+    width: 90%;
+    margin-bottom: var(--margenes);
+  }
+
+  .cont-work{
+    width: 85%;
+  }
+
+  .marca-logo{
+    width: 80%;
+  }
+
+  .iconos{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+.marca-logo{
+    margin-bottom: 36px;
+    width: 179px;
+}
+.textofooter{
+    color: #FFFFFF;
+}
+.fa-facebook-f{
+    margin-top: 9px;
+    margin-bottom: 19px;
+    padding-bottom: 0px;
+    text-align: center;
+    vertical-align: 0px;
+}
+.fa-youtube{margin-top: 9px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    text-align: center;}
+.fa-behance{margin-top: 9px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    text-align: center;}
